@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>      
+
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size:14px;
+        }
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .responsive-table{
+            max-width:100%;
+            overflow-x:auto;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -33,6 +57,41 @@
         <div style="width: 60px; height: 60px; background: yellow">
             Aqui
         </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <div class ="responsive-table">
+        <table>
+            <caption>Descrição da tabela</caption>
+            <thead>
+                <tr>
+                    <th>coluna 1</th>
+                    <th>coluna 2</th>
+                    <th>coluna 3</th>
+                    <th>coluna 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Célula 11</td>
+                    <td>Célula 12</td>
+                    <td>Célula 13</td>
+                    <td>Célula 14</td>
+                </tr>
+                
+                <tr>
+                    <td>Célula 21</td>
+                    <td>Célula 22</td>
+                    <td>Célula 23</td>
+                    <td>Célula 24</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <td colspan="4">Celula tfoot</td>
+            </tfoot>
+        </table>
     </div>
 </body>
 </html>
