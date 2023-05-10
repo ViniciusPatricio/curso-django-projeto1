@@ -27,6 +27,11 @@
             max-width:100%;
             overflow-x:auto;
         }
+
+        #label-name {
+            cursor: pointer;
+            display: block;
+        }
     </style>
 
 </head>
@@ -93,5 +98,45 @@
             </tfoot>
         </table>
     </div>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1>Formulário</h1>
+            
+            <fieldset>
+                <legend>Descrição</legend>
+                <p> 
+                    <label for="nome" id="label-name">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </p>
+
+                <p> 
+                    <label for="dev" id="label-dev">Desenvolvedor</label>
+                    <input type="checkbox" id="dev" name="dev">
+                </p>
+                
+                <p>
+                    Genêro: <br>
+                    <label for="feminino">feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="outro-nlistado">Outro não listado</label>
+                    <input type="radio" id="outro-nlistado" name="genero" value="outro não listado">
+                         
+                </p>
+
+
+                <p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Enviar</button>
+                </p>
+
+            </fieldset>
+
+        </section>
+
+    </form>
+
 </body>
 </html>
