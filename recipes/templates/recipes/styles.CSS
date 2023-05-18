@@ -1,0 +1,33 @@
+.body-test {
+    background: black;
+}
+
+article p {
+    color: green;
+}
+
+table  {
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+table caption {
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+    font-size:14px;
+}
+table td, table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.responsive-table{
+    max-width:100%;
+    overflow-x:auto;
+}
+
+#label-name {
+    cursor: pointer;
+    display: block;
+}
